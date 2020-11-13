@@ -8,7 +8,6 @@ import {
 } from "reactstrap"
 
 import {
-    User,
     Menu,
     Home,
     Search,
