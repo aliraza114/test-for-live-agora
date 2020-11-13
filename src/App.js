@@ -1,13 +1,13 @@
 import React from 'react'
-// import cors from require('cors')
+
 
 import NavigationBar from './components/navbar'
 import { Routes, Route } from 'react-router-dom'
 import LogIn from './pages/login'
 import Signup from './pages/signup'
 
-import ChannelForm from './components/Channelform'
-import Call from './components/Call'
+// import ChannelForm from './components/Channelform'
+// import Call from './components/Call'
 
 
 

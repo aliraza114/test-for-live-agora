@@ -1,4 +1,3 @@
-import Axios from 'axios';
 import React from 'react'
 import { Button, Form, FormGroup, Label, Input, Col, Row } from 'reactstrap';
 import BASE_URL from '../utils/utils'

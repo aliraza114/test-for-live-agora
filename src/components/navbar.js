@@ -1,7 +1,6 @@
 import React from "react"
-import Login from '../pages/login'
 import {Link} from 'react-router-dom'
-import { Route, Router } from 'react-router-dom'
+
 import {
     NavItem,
     NavLink,
@@ -15,7 +14,6 @@ import {
     Search,
     Bell,
     Video,
-    LogIn
 } from "react-feather"
 
 const NavigationBar = () => {
