@@ -8,23 +8,29 @@ const public_url = axios.create()
 
 public_url.defaults.baseURL = BASE_URL
 // axios.defaults.headers.post['Authorization'] = 'Basic MmY4MDBlNWZlOTljNDg1ZGIyNmQ1ZGUzN2Y4ODYwNWY6NTFlYTU1MThlZmFkNGMwMzk1M2U5Mjc3MzczMmM0MDI='
-// axios.default.headers = 'Access-Control-Allow-Origin: *'
-// public_url.defaults.headers.post['Content-Type'] = 'text/plain';
+axios.default.headers = 'Access-Control-Allow-Origin: *'
+axios.default.headers = 'Access-Control-Allow-Methods", "DELETE, POST, GET, OPTIONS'
+axios.default.headers = 'Access-Control-Allow-Headers", "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With'
+axios.defaults.headers.post['Content-Type'] = 'text/plain';
 
 const onSubmit = e => {
     e.preventDefault()
     console.log('Here is click')
     axios({
         method: 'post',
-        url: BASE_URL + '/dev/v1/project',
+        url: BASE_URL + 'dev/v1/project',
+        auth: {
+            username: '2f800e5fe99c485db26d5de37f88605f',
+            password: '51ea5518efad4c03953e92773732c402'
+        },
         headers: {
-            Authorization: 'Basic MmY4MDBlNWZlOTljNDg1ZGIyNmQ1ZGUzN2Y4ODYwNWY6NTFlYTU1MThlZmFkNGMwMzk1M2U5Mjc3MzczMmM0MDI='
+        
         }, 
         data: {
             "name": "Test three",
             "enable_sign_key": true
         }
-      })
+    })
     // public_url.post('/dev/v1/project', 
     // {
     //     "name": "Test three",
